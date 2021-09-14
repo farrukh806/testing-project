@@ -1,14 +1,13 @@
-import React from "react";
-import CommentBox from "./CommentBox";
-import CommentList from "./CommentList";
-
+import React from 'react';
+import CommentBox from '../components/CommentBox';
+import CommentList from '../components/CommentList';
 const App = () => {
-  return (
-    <div>
-      <CommentBox />
-      <CommentList />
-    </div>
-  );
+	return (
+		<div>
+			<CommentBox />
+			<CommentList />
+		</div>
+	);
 };
 
 export default App;
