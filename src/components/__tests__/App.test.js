@@ -1,13 +1,12 @@
 import { shallow } from 'enzyme';
 import React from 'react';
-import App from 'components/App';
+import App from '../App';
 import CommentBox from '../CommentBox';
 import CommentList from '../CommentList';
 
-
 let wrapped;
 beforeEach(() => {
-	 wrapped = shallow(<App />);
+	wrapped = shallow(<App />);
 });
 
 it('shows a comment box', () => {
