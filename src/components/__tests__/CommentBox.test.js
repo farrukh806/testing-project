@@ -1,12 +1,16 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import CommentBox from '../CommentBox';
-
+import Root from '../../store';
 let wrapped;
 
 beforeEach(() => {
 	// Mount function mounts the actual component ==> (Full JS DOM render)
-	wrapped = mount(<CommentBox />);
+	wrapped = mount(
+		<Root>	
+			<CommentBox />
+		</Root>
+	);
 });
 
 afterEach(() => {
@@ -24,7 +28,7 @@ describe('the textarea', () => {
 		wrapped
 			.find('textarea')
 			.simulate('change', { target: { value: 'New comment' } });
-			
+
 		// As we know setState method is async so we have to
 		// force the component to rerender itself using update method
 		// provided by Enzyme so that we dont have to wait for auto rendering process
