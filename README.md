@@ -1,3 +1,5 @@
+# The purpose of this project is solely to understand how testing works using Enzyme
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
